@@ -26,14 +26,6 @@ zstyle ':completion:*:*:kill:*:processes' list-colors "=(#b) #([0-9]#)*=36=31"
  
 # Correction des commandes
 setopt correctall
- 
-# Un petit prompt sympa
-autoload -U promptinit
-promptinit
-prompt walters
-
-# Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH";
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
@@ -42,10 +34,10 @@ for file in ~/.{path,exports,aliases,functions,extra}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
- 
-# marre de se faire corriger par zsh ;)
-alias xs='cd'
-alias sl='ls'
-# Un grep avec des couleurs :
-export GREP_COLOR=31
-alias grep='grep --color=auto'
+
+# prompt config
+autoload -U promptinit
+promptinit
+source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
