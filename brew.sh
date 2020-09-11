@@ -23,6 +23,13 @@ brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
 brew install gnu-sed
 
+# Install RBEnv to use local versions of ruby instead of system ones
+brew install rbenv
+
+# Install pandoc to generate pdf from markdown
+brew install pandoc
+pip install --user pandoc-include
+
 # Install `wget` with IRI support.
 # brew install wget --with-iri
 

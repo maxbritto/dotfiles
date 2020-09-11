@@ -3,3 +3,15 @@ export PATH="$HOME/bin:$PATH";
 
 # Homebrew
 export PATH="/usr/local/sbin:$PATH"
+
+# Flutter
+export PATH="$HOME/flutter/bin:$PATH"
+
+# Android SDK
+export ANDROID_SDK_ROOT="/Volumes/shared/Android/sdk"
+
+# Apple Dev tools
+export PATH="$PATH:/Library/Apple/usr/bin/"
+
+# Python libs 
+export PATH=$PATH:/Users/mbritto/Library/Python/3.7/bin
