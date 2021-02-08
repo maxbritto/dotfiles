@@ -17,7 +17,7 @@ brew install coreutils
 ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 
 # Install some other useful utilities like `sponge`.
-brew install moreutils
+# brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
@@ -27,8 +27,11 @@ brew install gnu-sed
 brew install rbenv
 
 # Install pandoc to generate pdf from markdown
-brew install pandoc
-pip install --user pandoc-include
+#brew install pandoc
+#pip install --user pandoc-include
+
+# Install asciidoc 
+brew install asciidoc
 
 # Install `wget` with IRI support.
 # brew install wget --with-iri
