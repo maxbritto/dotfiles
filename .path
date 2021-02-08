@@ -9,6 +9,7 @@ export PATH="$HOME/flutter/bin:$PATH"
 
 # Android SDK
 export ANDROID_SDK_ROOT="/Volumes/shared/Android/sdk"
+export PATH="$PATH:/Volumes/shared/Android/sdk/tools:/Volumes/shared/Android/sdk/tools/bin:/Volumes/shared/Android/sdk/platform-tools"
 
 # Apple Dev tools
 export PATH="$PATH:/Library/Apple/usr/bin/"
