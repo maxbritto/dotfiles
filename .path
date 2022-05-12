@@ -2,17 +2,19 @@
 export PATH="$HOME/bin:$PATH";
 
 # Homebrew
-export PATH="/usr/local/sbin:$PATH"
-
 # Flutter
 export PATH="$HOME/flutter/bin:$PATH"
+export PATH=$(brew --prefix)/bin:$(brew --prefix)/sbin:$PATH
 
 # Android SDK
-export ANDROID_SDK_ROOT="/Volumes/shared/Android/sdk"
-export PATH="$PATH:/Volumes/shared/Android/sdk/tools:/Volumes/shared/Android/sdk/tools/bin:/Volumes/shared/Android/sdk/platform-tools"
+export ANDROID_SDK_ROOT="/Users/mbritto/Library/Android/sdk"
+export PATH="$PATH:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/tools/bin:$ANDROID_SDK_ROOT/platform-tools"
 
 # Apple Dev tools
 export PATH="$PATH:/Library/Apple/usr/bin/"
 
 # Python libs 
 export PATH=$PATH:/Users/mbritto/Library/Python/3.7/bin
+
+# Dart pub extensions
+export PATH="$PATH":"$HOME/.pub-cache/bin"
