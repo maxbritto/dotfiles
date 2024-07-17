@@ -15,6 +15,7 @@ export PATH="$PATH:/Library/Apple/usr/bin/"
 
 # Python libs 
 export PATH=$PATH:/Users/mbritto/Library/Python/3.7/bin
+export PATH=$HOME/.pyenv/shims:$PATH
 
 # Dart pub extensions
 export PATH="$PATH":"$HOME/.pub-cache/bin"
