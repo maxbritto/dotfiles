@@ -1,10 +1,11 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
-# Homebrew
 # Flutter
 export PATH="$HOME/flutter/bin:$PATH"
-export PATH=$(brew --prefix)/bin:$(brew --prefix)/sbin:$PATH
+
+# Homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Android SDK
 export ANDROID_SDK_ROOT="/Users/mbritto/Library/Android/sdk"
