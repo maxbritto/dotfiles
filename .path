@@ -20,3 +20,9 @@ export PATH=$HOME/.pyenv/shims:$PATH
 
 # Dart pub extensions
 export PATH="$PATH":"$HOME/.pub-cache/bin"
+
+# Claude code is in .local/bin
+export PATH="$HOME/.local/bin:$PATH"
+
+# Added by Antigravity
+export PATH="/Users/mbritto/.antigravity/antigravity/bin:$PATH"

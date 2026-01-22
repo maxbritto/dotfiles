@@ -1,3 +1,8 @@
+# Some ai agents are using this env variable when running terminals. We use it to disable all of our configurations
+if [[ "$COMPOSER_NO_INTERACTION" == "1" ]]; then
+  return
+fi
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
