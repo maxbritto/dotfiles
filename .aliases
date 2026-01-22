@@ -139,3 +139,9 @@ alias reload="exec ${SHELL} -l"
 alias path='echo -e ${PATH//:/\\n}'
 
 alias fastlane='bundle exec fastlane'
+
+alias kc='kubectl'
+alias kc-ovh-vega='kubectl config use-context kubernetes-admin@vega-api-cluster'
+alias kc-ovh-learning-apps='kubectl config use-context kubernetes-admin@learning-apps'
+alias kc-scaleway-learning-apps='kubectl config use-context kubernetes-admin@learning-apps'
+alias kc-local='kubectl config use-context docker-desktop'
