@@ -139,6 +139,7 @@ alias reload="exec ${SHELL} -l"
 alias path='echo -e ${PATH//:/\\n}'
 
 alias fastlane='bundle exec fastlane'
+alias caffeinate='caffeinate -d -i -m -s'
 
 alias kc='kubectl'
 alias kc-ovh-vega='kubectl config use-context kubernetes-admin@vega-api-cluster'
